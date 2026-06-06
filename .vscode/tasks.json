@@ -20,7 +20,8 @@
 
                 "-o",
 
-                "${fileDirname}\\${fileBasenameNoExtension}_debug.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}_debug.exe",
+                "-fexec-charset=gbk"
 
             ],
 
@@ -66,7 +67,8 @@
 
                 "-o",
 
-                "${fileDirname}\\${fileBasenameNoExtension}_release.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}_release.exe",
+                "-fexec-charset=gbk"
 
             ],
 
