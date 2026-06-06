@@ -1,0 +1,103 @@
+{
+
+    "tasks": [
+
+        {
+
+            "type": "cppbuild",
+
+            "label": "build-debug",
+
+            "command": "D:\\tool\\encoder\\mingw64\\bin\\g++.exe",
+
+            "args": [
+
+                "-fdiagnostics-color=always",
+
+                "-g",
+
+                "${file}",
+
+                "-o",
+
+                "${fileDirname}\\${fileBasenameNoExtension}_debug.exe"
+
+            ],
+
+            "options": {
+
+                "cwd": "${fileDirname}"
+
+            },
+
+            "problemMatcher": [
+
+                "$gcc"
+
+            ],
+
+            "group": {
+
+                "kind": "build",
+
+                "isDefault": true
+
+            },
+
+            "detail": "调试器生成的任务。"
+
+        },
+
+         {
+
+            "type": "cppbuild",
+
+            "label": "build-release",
+
+            "command": "D:\\tool\\encoder\\mingw64\\bin\\g++.exe",
+
+            "args": [
+
+                "-O2",
+
+                "-fdiagnostics-color=always",
+
+                "${file}",
+
+                "-o",
+
+                "${fileDirname}\\${fileBasenameNoExtension}_release.exe"
+
+            ],
+
+            "options": {
+
+                "cwd": "${fileDirname}"
+
+            },
+
+            "problemMatcher": [
+
+                "$gcc"
+
+            ],
+
+            "group": {
+
+                "kind": "build",
+
+                "isDefault": true
+
+            },
+
+            "detail": "调试器生成的任务。"
+
+        }
+
+       
+
+    ],
+
+    "version": "2.0.0"
+
+}
